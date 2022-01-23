@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "scrapingData.tsx", "requestData.js", "node_modules/requestData.js", "requestDataVol3.js"  ]
 }
