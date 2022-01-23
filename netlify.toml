@@ -4,6 +4,6 @@
   status = 200
 
 [[headers]]
-  for = "/*"
+  for = "https://us-central1-bodokal.cloudfunctions.net/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
