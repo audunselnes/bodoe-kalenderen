@@ -1,23 +1,27 @@
 import EventDate from './EventDate';
-import './EventItem.css';
+import './EventItem.scss';
 
 export interface IProps{
         title: string;
-        description: string,
+        date: string,
+        location: string,
         link: string
-        img: string
+        image: string
 }
 
-const EventItem: React.FC<IProps> = ({ title, description, link, img }) => {
+const EventItem: React.FC<IProps> = ({ title, date, location, link, image }) => {
+    console.log(image);
             return (
-                <li className = "event-item">
-                    <div className= 'event-date'>{<EventDate date={new Date} />}</div>
+                    <a className= "event-item" href= {link}>
+                    <div>
+                    <div className= 'event-date'>{date}</div>
                     <div className= 'event-description'>
                     <h2>{title}</h2>
-                    <h3>{description}</h3>
+                    <h3>{location}</h3>
                     </div>
-                    <div className= 'availability'>{link}</div>    
-                </li>
+                    </div>
+                    <img src={ image } style={{height: 50, width: 100 }} alt = "logo" />
+                    </a>
             )
     }
 export default EventItem;

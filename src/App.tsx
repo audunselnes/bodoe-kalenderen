@@ -11,8 +11,8 @@ function App() {
     }, []);
 
     return(
-        <div>
-        <h1>Arrangementkalender</h1>
+        <div className= "app-bodokalenderen">
+        <h1>Bodøkalenderen</h1>
         <h3>Kalender med konserter, opera, teater, marked, idrett og annen underholdning i Bodø.</h3>
         {data?.map(event =>
             <EventItem {...event}> </EventItem>
