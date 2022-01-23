@@ -10,6 +10,7 @@ const axiosConfig = {
 
 const getEventData = async () => 
    await axios(axiosConfig).then(a => a.data);
+   
 
 
 export default getEventData;

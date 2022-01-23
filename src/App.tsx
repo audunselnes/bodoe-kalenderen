@@ -9,7 +9,7 @@ function App() {
     useEffect(() => {
         requestData().then(a => setData(a))
     }, []);
-
+    console.log(data);
     return(
         <div className= "app-bodokalenderen">
         <h1>Bodøkalenderen</h1>
