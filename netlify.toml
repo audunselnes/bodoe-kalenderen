@@ -1,9 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[headers]]
-  for = "us-central1-bodokal.cloudfunctions.net/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
