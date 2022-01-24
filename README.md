@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Bodøkalenderen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Bodøkalenderen](https://bodokal.web.app) is a web page where you can see events that are happening in Bodø.  
+This is achevied by web-scraping (currently only Tikkio.com).
+
+The web app and the cloud functions (which does the scraping) are both hosted on Firebase.
 
 ## Available Scripts
 
@@ -23,7 +26,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn lint --fix` 
-
-Formats the code based on the Airbnb format.
